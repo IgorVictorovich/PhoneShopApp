@@ -1,0 +1,45 @@
+<div class="container-fluid">
+  <form class="form-inline">
+    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" ng-model="$ctrl.query" placeholder="Search">
+
+
+    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+      <label class="mr-sm-2" for="categorySearchSelect">Search by category</label>
+      <select id="categorySearchSelect" class="custom-select mb-2 mr-sm-2 mb-sm-0" ng-model="$ctrl.search" ng-options="phone.category for phone in $ctrl.phones | unique:'category'">
+        <option value="">Any</option>
+      </select>
+    </div>
+
+    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+      <label class="mr-sm-2" for="orderBySelect">Search by category</label>
+      <select id="categorySearchSelect" class="custom-select mb-2 mr-sm-2 mb-sm-0" ng-model="$ctrl.orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="age">Newest</option>
+      </select>
+    </div>
+
+    <button type="button" class="btn btn-primary" ng-click="$ctrl.routeToCart()">
+        <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart ({{$ctrl.countItemsInShoppingCart()}})
+    </button>
+  </form>
+</br></br>
+  <div class="card-group phones">
+    <div class="card" style="width: 20rem;" ng-repeat="phone in $ctrl.phones |
+      filter:$ctrl.query | filter:$ctrl.search.category:true | orderBy:$ctrl.orderProp">
+      <img class="card-img-top" ng-src="{{phone.imageUrl}}" alt="{{phone.name}}">
+      <div class="card-block">
+        <h4 class="card-title"><a href="#!/phones/{{phone.id}}">{{phone.name}}</a></h4>
+        <p class="card-text">{{phone.snippet}}</p>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-default btn-sm" ng-click="$ctrl.getDetails(phone)">
+            Details
+        </button>
+        <button type="button" class="btn btn-default btn-sm" ng-click="$ctrl.addToShoppingCart(phone)">
+            <span class="glyphicon glyphicon-shopping-cart"></span> Add to shopping cart
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>

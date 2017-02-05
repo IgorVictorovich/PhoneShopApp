@@ -1,0 +1,87 @@
+{
+    "additionalFeatures": "Front Facing 7.0MP Camera",
+    "android": {
+        "os": "iOS 10",
+        "ui": "iOS"
+    },
+    "availability": [
+        "T-Mobile"
+    ],
+    "battery": {
+        "standbyTime": "10 days",
+        "talkTime": "14 hours",
+        "type": "Lithium Ion (Li-Ion)"
+    },
+    "camera": {
+        "features": [
+            "Flash",
+            "Video",
+            "Digital zoom up to 5x",
+            "ƒ/1.8 aperture",
+            "Optical image stabilization",
+            "Six‑element lens",
+            "Quad-LED True Tone flash",
+            "Panorama (up to 63 megapixels)",
+            "Sapphire crystal lens cover",
+            "Backside illumination sensor",
+            "Hybrid IR filter",
+            "Autofocus with Focus Pixels",
+            "Tap to focus with Focus Pixels",
+            "Live Photos with stabilization",
+            "Wide color capture for photos and Live Photos",
+            "Improved local tone mapping",
+            "Body and face detection",
+            "Exposure control",
+            "Noise reduction",
+            "Auto HDR for photos",
+            "Auto image stabilization",
+            "Burst mode",
+            "Timer mode",
+            "Photo geotagging"
+        ],
+        "primary": "12.0 megapixels"
+    },
+    "connectivity": {
+        "bluetooth": "Bluetooth 4.2",
+        "cell": "UMTS/HSPA+/DC-HSDPA (850, 900, 1700/2100, 1900, 2100 MHz) GSM/EDGE (850, 900, 1800, 1900 MHz)",
+        "gps": true,
+        "infrared": false,
+        "wifi": "802.11a/b/g/n/ac Wi‑Fi with MIMO"
+    },
+    "description": "An entirely new camera system. The brightest, most colorful iPhone display ever. The fastest performance and best battery life in an iPhone. Water and splash resistant. And stereo speakers. Every bit as powerful as it looks—this is iPhone 7.",
+    "display": {
+        "screenResolution": "Retina HD (1334x750)",
+        "screenSize": "4.7 inches",
+        "touchScreen": true
+    },
+    "hardware": {
+        "accelerometer": true,
+        "audioJack": "no",
+        "cpu": "A10 Fusion",
+        "fmRadio": false,
+        "physicalKeyboard": false,
+        "usb": "Lightning"
+    },
+    "id": "apple-iphone-7",
+    "images": [
+        "img/phones/apple-iphone-7.0.jpg",
+        "img/phones/apple-iphone-7.1.jpg",
+        "img/phones/apple-iphone-7.2.jpg",
+        "img/phones/apple-iphone-7.3.jpg",
+        "img/phones/apple-iphone-7.4.jpg"
+    ],
+    "name": "Apple iPhone 7",
+    "sizeAndWeight": {
+        "dimensions": [
+            "67.1 mm (w)",
+            "138.3 mm (h)",
+            "7.1 mm (d)"
+        ],
+        "weight": "138.0 grams"
+    },
+    "storage": {
+        "flash": "32000MB",
+        "ram": "2048MB"
+    },
+    "category": "phone"
+}
