@@ -1,0 +1,21 @@
+'use strict';
+
+angular.
+  module('phoneShopApp').
+  config(['$locationProvider' ,'$routeProvider',
+    function config($locationProvider, $routeProvider) {
+      $locationProvider.hashPrefix('!');
+
+      $routeProvider.
+        when('/phones', {
+          template: '<phone-list></phone-list>'
+        }).
+        when('/phones/:phoneId', {
+          template: '<phone-detail></phone-detail>'
+        }).
+        when('/cart', {
+          template: '<shopping-cart></shopping-cart>'
+        }).
+        otherwise('/phones');
+    }
+  ]);
